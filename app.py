@@ -14,7 +14,7 @@ if st.button('Generate Text'):
     if title:
         with st.spinner('Generating...'):
             response = openai.Completion.create(
-                engine="gpt-4",
+                engine="gpt-4o-mini",
                 prompt=f"Write a short paragraph about: {title}",
                 max_tokens=150
             )
